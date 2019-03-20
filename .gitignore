@@ -1,0 +1,6 @@
+# Dependency directories
+node_modules/
+.idea/
+
+# Coverage directory used by tools like istanbul
+coverage

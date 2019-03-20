@@ -13,6 +13,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.4",
+    "mocha": "^6.0.2",
+    "path": "^0.12.7",
+    "ts-node": "^8.0.3",
     "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "mali": "^0.13.0"
   }
 }

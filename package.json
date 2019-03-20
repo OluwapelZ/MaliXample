@@ -2,9 +2,13 @@
   "name": "malixample",
   "version": "1.0.0",
   "description": "Playaround with Mali for Middleware with Typescript",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc",
+    "build:proto": "node bin/proto",
+    "start": "node dist/server",
+    "client": "node dist/client"
   },
   "repository": {
     "type": "git",
@@ -21,6 +25,9 @@
     "typescript": "^3.3.4000"
   },
   "dependencies": {
-    "mali": "^0.13.0"
+    "grpc_tools_node_protoc_ts": "^2.5.0",
+    "mali": "^0.13.0",
+    "rimraf": "^2.6.3",
+    "shelljs": "^0.8.3"
   }
 }
